@@ -1,10 +1,10 @@
 import React from "react";
+import styled from "styled-components";
 
 export default function Card(props) {
-  const cardStyle = {
-    width: "300px",
-    padding: "1rem",
-    boxShadow: "2px 2px 4px rgba(0,0,0,0.4)",
-  };
-  return <div style={cardStyle}>{props.title}</div>;
+  return <Container>{props.title}</Container>;
 }
+
+const Container = styled.div`
+  color: #333;
+`;

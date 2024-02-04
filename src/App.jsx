@@ -3,6 +3,7 @@ import "./App.css";
 import styled from "styled-components";
 import Card from "./chapter1/Card";
 import Button from "./chapter1/Button";
+import Chicken from "./chapter1/Chicken";
 
 function App() {
   function generateRandomColor() {
@@ -23,7 +24,7 @@ function App() {
   return (
     <Container>
       {randomColors.map((color) => {
-        return <Button title={"Button"} color={color}></Button>;
+        return <Chicken color={color}></Chicken>;
       })}
     </Container>
   );

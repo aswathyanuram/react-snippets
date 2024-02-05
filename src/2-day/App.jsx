@@ -4,13 +4,13 @@ import Button from "./Button";
 export default function App() {
   let titles = ["Click me", "Submit", "Validate", "OK", "Open"];
 
-  function generateRandomColor() {
+  const generateRandomColor = () => {
     let red = Math.floor(Math.random() * 255);
     let green = Math.floor(Math.random() * 255);
     let blue = Math.floor(Math.random() * 255);
     let color = `rgb(${red},${green},${blue})`;
     return color;
-  }
+  };
 
   return (
     <div>

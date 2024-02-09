@@ -4,29 +4,12 @@ import Button from "./Button";
 import { BLUE_COLOR, RED_COLOR } from "../helpers/colorHelper";
 
 export default function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  const changeLogin = () => {
-    console.log("JEEVA");
-    setIsLoggedIn((old) => !old);
-  };
-
+  const age = 17;
   return (
     <Container>
-      {!isLoggedIn && (
-        <Button
-          title="Login"
-          color={!isLoggedIn ? BLUE_COLOR : RED_COLOR}
-          onClick={changeLogin}
-        />
-      )}
-      {isLoggedIn && (
-        <Button
-          title="Logout"
-          color={!isLoggedIn ? BLUE_COLOR : RED_COLOR}
-          onClick={changeLogin}
-        />
-      )}
+      {age >= 18 && "Eligible to drive"}
+
+      {age < 18 && " Not eligible to drive"}
     </Container>
   );
 }

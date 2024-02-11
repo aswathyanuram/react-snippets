@@ -11,6 +11,7 @@ export default function Video({ video }) {
     description,
     channelImage,
   } = video;
+
   return (
     <Container>
       <ImageContainer image={image}></ImageContainer>

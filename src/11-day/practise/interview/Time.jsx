@@ -38,11 +38,12 @@ export default function Time() {
         <label>Pick a Color: </label>
         <select
           onChange={(e) => {
+            console.log(e.target.value);
             const value = e.target.value; //MUG UP
             setColor(value);
           }}
         >
-          <option>Red</option>
+          <option value="red">Red</option>
           <option>Green</option>
           <option>Blue</option>
         </select>

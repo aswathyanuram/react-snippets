@@ -26,7 +26,7 @@ export default function App() {
     <Container>
       <Button
         onClick={() => {
-          getProducts("https://dummyjson.com/products");
+          getProducts("http://localhost:8080/");
         }}
       >
         GET PRODUCTS

@@ -2,10 +2,21 @@ import React, { useState } from "react";
 
 export default function Calculator() {
   const [displayText, setDisplayText] = useState("");
+  const [isError, setIsError] = useState(false);
 
   const updateText = (e) => {
+    setIsError(false);
     const value = e.target.innerText;
-    setDisplayText((old) => old + String(value));
+    if (!isNaN(Number(value))) {
+      setDisplayText((old) => old + String(value));
+    } else if (
+      displayText[displayText?.length - 1] != "x" &&
+      displayText[displayText?.length - 1] != "+" &&
+      displayText[displayText?.length - 1] != "-" &&
+      displayText[displayText?.length - 1] != "/"
+    ) {
+      setDisplayText((old) => old + String(value));
+    }
   };
 
   const clearOne = () => {
@@ -16,12 +27,31 @@ export default function Calculator() {
     setDisplayText("");
   };
 
+  const calculate = () => {
+    setIsError(false);
+    let updatedText = displayText.replace(/x/g, "*");
+    try {
+      let result = eval(updatedText);
+      setDisplayText(result);
+      if (!isNaN(Number(result))) {
+        setDisplayText(result);
+      }
+    } catch (error) {
+      setIsError(true);
+    }
+  };
+
   return (
     <div className="calc_container">
       <div className="calc_wrapper">
-        <div className="calc_display">{displayText}</div>
+        <div className={isError ? "calc_display_error" : "calc_display"}>
+          {displayText}
+        </div>
         <div className="calc_buttons">
           <div className="calc_button_row">
+            <div className="calc_button" onClick={updateText}>
+              +
+            </div>
             <div className="calc_button" onClick={updateText}>
               7
             </div>
@@ -34,6 +64,9 @@ export default function Calculator() {
           </div>
           <div className="calc_button_row">
             <div className="calc_button" onClick={updateText}>
+              -
+            </div>
+            <div className="calc_button" onClick={updateText}>
               4
             </div>
             <div className="calc_button" onClick={updateText}>
@@ -44,6 +77,9 @@ export default function Calculator() {
             </div>
           </div>
           <div className="calc_button_row">
+            <div className="calc_button" onClick={updateText}>
+              x
+            </div>
             <div className="calc_button" onClick={updateText}>
               1
             </div>
@@ -56,10 +92,13 @@ export default function Calculator() {
           </div>
           <div className="calc_button_row">
             <div className="calc_button" onClick={updateText}>
+              /
+            </div>
+            <div className="calc_button" onClick={updateText}>
               0
             </div>
-            <div className="calc_button calc_accent" onClick={clearOne}>
-              C
+            <div className="calc_button calc_accent" onClick={calculate}>
+              =
             </div>
             <div className="calc_button calc_accent" onClick={clearAll}>
               CE

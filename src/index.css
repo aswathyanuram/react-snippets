@@ -9,3 +9,66 @@ button {
 * {
   box-sizing: border-box;
 }
+
+.calc_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 95vw;
+  min-height: 96vh;
+}
+
+.calc_wrapper {
+  background-color: #1b1b1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 300px;
+  padding: 0.5rem;
+}
+
+.calc_display {
+  width: 100%;
+  background-color: #00000011;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  min-height: 40px;
+  color: #ffffff;
+}
+
+.calc_buttons {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #333333;
+  color: #f2f2f2;
+}
+
+.calc_button_row {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+}
+
+.calc_button {
+  padding: 0.5rem;
+  background-color: #00000022;
+  margin: 0.25rem;
+  flex: 1;
+  cursor: pointer;
+}
+
+.calc_accent:hover {
+  background-color: #ff9f0cff;
+}
+
+.calc_accent {
+  background-color: #ff9f0cdd;
+  color: #f2f2f2;
+}

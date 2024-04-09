@@ -1,6 +1,6 @@
 import React from "react";
-import Color from "./Color";
+import Calculator from "./Calculator";
 
 export default function App() {
-  return <Color />;
+  return <Calculator />;
 }

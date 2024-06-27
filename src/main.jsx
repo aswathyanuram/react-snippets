@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./15-day/App";
+import App from "./16-day/App";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

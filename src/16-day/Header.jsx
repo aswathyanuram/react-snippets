@@ -6,9 +6,9 @@ export default function Header() {
   return (
     <div>
       <div className="header">
-        <MdVideoCameraFront
-          style={{ fontSize: "2rem", borderRadius: "10px" }}
-        />
+        <div className="iconStyle">
+          <MdVideoCameraFront />
+        </div>
         <div className="title">
           <div className="main">Title goes here</div>
           <div className="sub">Secondary Text</div>

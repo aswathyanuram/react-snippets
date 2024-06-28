@@ -42,3 +42,13 @@
   justify-content: space-between;
   background-color: white;
 }
+
+.iconStyle {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 2rem;
+  background-color: #e5e5e5;
+}

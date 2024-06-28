@@ -1,13 +1,13 @@
 import React from "react";
 import "./card.css";
-import { MdVideoCameraFront } from "react-icons/md";
+import { MdPerson } from "react-icons/md";
 
 export default function Header() {
   return (
     <div>
       <div className="header">
         <div className="iconStyle">
-          <MdVideoCameraFront />
+          <MdPerson />
         </div>
         <div className="title">
           <div className="main">Title goes here</div>

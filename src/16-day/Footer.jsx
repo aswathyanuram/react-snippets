@@ -7,12 +7,15 @@ import { IoMdShare } from "react-icons/io";
 export default function Footer() {
   return (
     <div className="footer">
-      <Button title={"ACTION 1"} />
-      <Button title={"ACTION 2"} />
+      <div className="footer_actions">
+        <Button title={"ACTION 1"} />
+        <Button title={"ACTION 2"} />
+      </div>
 
-      <FaHeart style={{ marginRight: "10px" }} />
-      <IoMdShare style={{ marginRight: "10px" }} />
+      <div className="footer_icons">
+        <FaHeart style={{ marginRight: "10px" }} />
+        <IoMdShare style={{ marginRight: "10px" }} />
+      </div>
     </div>
   );
 }
-

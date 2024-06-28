@@ -66,3 +66,11 @@
   align-items: center;
   justify-content: flex-end;
 }
+
+.clickable {
+  cursor: pointer;
+}
+
+.hoverable:hover {
+  color: #000 !important;
+}

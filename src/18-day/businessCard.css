@@ -71,6 +71,10 @@
   align-items: center;
   flex-direction: column;
 }
+.avatar {
+  height: 50px;
+  width: 50px;
+}
 .name {
   font-family: "Lato", sans-serif;
   color: #111729;

@@ -11,7 +11,7 @@
 
 .blogCard {
   background-color: #ffffff;
-  height: 400px;
+  height: 350px;
   width: 350px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -21,6 +21,7 @@
   font-family: "Sora", sans-serif;
   font-size: 0.8rem;
   padding: 2rem;
+  border-radius: 1rem;
 }
 .header {
   display: flex;
@@ -40,7 +41,7 @@
   color: #883ae1;
   background-color: #e6d6fc;
   font-family: "Sora", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   border: none;
   border-radius: 20px;
   padding: 0.25rem 1rem;
@@ -49,15 +50,15 @@
 }
 .title {
   font-family: "Sora", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: 700;
   color: #20293a;
   padding-bottom: 0.75rem;
 }
 .details {
   font-family: "Sora", sans-serif;
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #6c727f;
 }
 .footer {
@@ -65,4 +66,5 @@
   font-size: 0.675rem;
   color: #6c727f;
   padding: 1rem 0 0 0;
+  font-weight: 500;
 }

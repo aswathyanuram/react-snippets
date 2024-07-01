@@ -68,3 +68,9 @@
   padding: 1rem 0 0 0;
   font-weight: 500;
 }
+.line {
+  width: 285px;
+  height: 1px;
+  background-color: #adb1b6;
+  margin-bottom: 0.5rem;
+}

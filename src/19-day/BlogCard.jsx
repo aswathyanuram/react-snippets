@@ -17,7 +17,9 @@ export default function BlogCard() {
           </div>
         </div>
 
-        <div className="footer">Annie Spratt</div>
+        <div className="footer">
+          <div className="line"></div>Annie Spratt
+        </div>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   font-family: "Sora", sans-serif;
   font-size: 0.8rem;
@@ -27,12 +27,11 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin-left: 1rem;
 }
 .image {
   background-image: url("./cactus_img.jpg");
   height: 150px;
-  width: 300px;
+  width: 285px;
   background-position: center;
   background-size: cover;
   border-radius: 1rem;
@@ -48,12 +47,6 @@
   margin: 1rem 0;
   font-size: 10px;
 }
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
 .title {
   font-family: "Sora", sans-serif;
   font-size: 1.25rem;
@@ -68,14 +61,8 @@
   color: #6c727f;
 }
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.name {
   font-family: "Sora", sans-serif;
   font-size: 0.675rem;
   color: #6c727f;
-  margin: 1rem;
+  padding: 1rem 0 0 0;
 }

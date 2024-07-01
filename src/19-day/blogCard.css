@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafaf9;
+}
+
+.blogCard {
+  background-color: #ffffff;
+  height: 400px;
+  width: 350px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Sora", sans-serif;
+  font-size: 0.8rem;
+  padding: 2rem;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.image {
+  background-image: url("./cactus_img.jpg");
+  height: 150px;
+  width: 300px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+.btn {
+  color: #883ae1;
+  background-color: #e6d6fc;
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  padding: 0.25rem 1rem;
+  margin: 1rem 0;
+  font-size: 10px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.title {
+  font-family: "Sora", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #20293a;
+  padding-bottom: 0.75rem;
+}
+.details {
+  font-family: "Sora", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #6c727f;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.name {
+  font-family: "Sora", sans-serif;
+  font-size: 0.675rem;
+  color: #6c727f;
+  margin: 1rem;
+}
